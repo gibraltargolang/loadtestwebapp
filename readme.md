@@ -2,6 +2,10 @@
 This is web app designed to help you to benchmark your projects.
 It allows you to sit and relax while your service is running on Heroku,OpenShit, AppEngine, etc.
 
+[AngularJS](https://angularjs.org/), [Firebase](http://firebaseio.com), [Golang](golang.org) and [Vegeta](https://github.com/tsenart/vegeta)
+
+It nicely wraps Vegeta HTTP load testing with Golang net/http package, firebase and AngularJS.
+
 Beutify is in progress, so do not expect to find awesome graphics and metrics just yet.
 
 
@@ -18,9 +22,6 @@ returns back:
 ```
 {"latencies":{"mean":468452083,"50th":469447624,"95th":597150580,"99th":633816447,"max":690458106},"bytes_in":{"total":1041072,"mean":2602.68},"bytes_out":{"total":0,"mean":0},"duration":3980000000,"wait":554108796,"requests":400,"rate":100.50251256281408,"success":0,"status_codes":{"503":400},"errors":["503 Service Unavailable"]}
 ```
- [AngularJS](https://angularjs.org/), [Firebase](http://firebaseio.com), (Golang)[golang.org] and [Vegeta](https://github.com/tsenart/vegeta)
-
-It nicely wraps Vegeta HTTP load testing with Golang net/http package, firebase and AngularJS.
 
 #AngularJS
 ![AngularJS](http://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/AngularJS_logo.svg/250px-AngularJS_logo.svg.png)
