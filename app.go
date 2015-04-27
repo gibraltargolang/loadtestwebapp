@@ -18,6 +18,7 @@ func main() {
 
 	fs := http.FileServer(http.Dir("assets"))
 	http.Handle("/", fs)
+
 	http.HandleFunc("/benchtest", benchtest)
 
 	log.Println("Listening...")

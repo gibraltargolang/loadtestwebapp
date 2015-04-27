@@ -2,7 +2,7 @@
 This is web app designed to help you to benchmark your projects.
 It allows you to sit and relax while your service is running on Heroku,OpenShit, AppEngine, etc.
 
-[AngularJS](https://angularjs.org/), [Firebase](http://firebaseio.com), [Golang](golang.org) and [Vegeta](https://github.com/tsenart/vegeta)
+[AngularJS](https://angularjs.org/), [Bower](http://bower.io/), [Firebase](http://firebaseio.com), [Golang](golang.org) and [Vegeta](https://github.com/tsenart/vegeta)
 
 It nicely wraps Vegeta HTTP load testing with Golang net/http package, firebase and AngularJS.
 
@@ -54,6 +54,54 @@ command:
 ```shell
 $ go get github.com/tsenart/vegeta
 $ go install github.com/tsenart/vegeta
+```
+
+Install css/js dependencies, require [Bower](http://bower.io/)
+```shell
+cd assets
+bower install
+```
+Outputs:
+```
+bower angularfire#~0.2          cached git://github.com/firebase/angularFire.git#0.2.0
+bower angularfire#~0.2        validate 0.2.0 against git://github.com/firebase/angularFire.git#~0.2
+bower bootstrap#~3.3.4          cached git://github.com/twbs/bootstrap.git#3.3.4
+bower bootstrap#~3.3.4        validate 3.3.4 against git://github.com/twbs/bootstrap.git#~3.3.4
+bower angular-resource#~1.0     cached git://github.com/angular/bower-angular-resource.git#1.0.8
+bower angular-resource#~1.0   validate 1.0.8 against git://github.com/angular/bower-angular-resource.git#~1.0
+bower angular#~1.0              cached git://github.com/angular/bower-angular.git#1.0.8
+bower angular#~1.0            validate 1.0.8 against git://github.com/angular/bower-angular.git#~1.0
+bower angular#1.0.7             cached git://github.com/angular/bower-angular.git#1.0.7
+bower angular#1.0.7           validate 1.0.7 against git://github.com/angular/bower-angular.git#1.0.7
+bower jquery#>= 1.9.1           cached git://github.com/jquery/jquery.git#2.1.3
+bower jquery#>= 1.9.1         validate 2.1.3 against git://github.com/jquery/jquery.git#>= 1.9.1
+
+Unable to find a suitable version for angular, please choose one:
+    1) angular#1.0.7 which resolved to 1.0.7 and is required by angularfire#0.2.0
+    2) angular#~1.0 which resolved to 1.0.8 and is required by assets
+    3) angular#1.0.8 which resolved to 1.0.8 and is required by angular-resource#1.0.8
+
+Prefix the choice with ! to persist it to bower.json
+
+? Answer: 1
+bower angularfire#~0.2         install angularfire#0.2.0
+bower angular-resource#~1.0    install angular-resource#1.0.8
+bower bootstrap#~3.3.4         install bootstrap#3.3.4
+bower angular#1.0.7            install angular#1.0.7
+bower jquery#>= 1.9.1          install jquery#2.1.3
+
+angularfire#0.2.0 bower_components/angularfire
+└── angular#1.0.7
+
+angular-resource#1.0.8 bower_components/angular-resource
+└── angular#1.0.7
+
+bootstrap#3.3.4 bower_components/bootstrap
+└── jquery#2.1.3
+
+angular#1.0.7 bower_components/angular
+
+jquery#2.1.3 bower_components/jquery
 ```
 
 ## Usage

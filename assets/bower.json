@@ -1,0 +1,22 @@
+{
+  "name": "assets",
+  "version": "0.0.0",
+  "homepage": "https://github.com/gibraltargolang/loadtestwebapp",
+  "authors": [
+    "Thomas Modeneis <thomas.modeneis@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.0",
+    "angular-resource": "~1.0",
+    "angularfire": "~0.2",
+    "bootstrap": "~3.3.4"
+    }
+  }

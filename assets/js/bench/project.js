@@ -60,9 +60,6 @@ function BenchEditCtrl($http, $scope, $location, $routeParams, angularFire,
 					}).success(function(ytdata) {
 						$scope.data = ytdata;
 						$scope.remote = angular.copy($scope.project);
-						console.log($scope.remote.site);
-						console.log($scope.data);
-						// $location.path('/benchmarktest');
 					});
 				};
 

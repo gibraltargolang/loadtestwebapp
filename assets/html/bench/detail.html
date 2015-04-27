@@ -44,10 +44,10 @@
 					Duration in seconds</span>
 				</div>
 
-			<div class="control-group" ng-class="{error: myForm.site.$invalid}">
-				<label>Body</label>
-				<textarea rows="15" cols="50" type="text" name="body"
-				ng-model="project.body">
+				<div class="control-group" ng-class="{error: myForm.site.$invalid}">
+					<label>Body</label>
+					<textarea rows="15" cols="50" type="text" name="body"
+					ng-model="project.body">
 				</textarea>
 			</div>
 
@@ -63,7 +63,7 @@
 			class="btn btn-danger">Delete</button>
 		</form>
 
+		<br>
 
-		{{data.Jsondata}}
-		<br><br><br><br>
-		{{data.Textdata}}
+
+		{{data.Jsondata | json}}

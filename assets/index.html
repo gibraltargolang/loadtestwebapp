@@ -1,23 +1,31 @@
 <!doctype html>
 <html ng-app="project">
-  <head>
-    <script src="js/angular.min.js"></script>
-    <script src="js/angular-resource.min.js">
-    </script>
-    <script src="js/firebase.js"></script>
-    <script src="js/angularFire.js"></script>
-    <script src="js/bench/project.js"></script>
-  </head>
-  <body>
-    <h2>
-      <img height="200" src="img/vegeta.jpeg">
-      Load Test your Projects Using Golang<br>
-    </h2>
-    <div ng-view></div>
-    <h5>
-      <a target="_BLANK" href="https://github.com/gibraltargolang/loadtestwebapp">Source</a>
-      | by <a target="_BLANK" href="http://www.meetup.com/Gibraltar-Golang-Community/">Gibraltar Golang Community</a>
-      | <a target="_BLANK" href="https://careers.stackoverflow.com/thomasmodeneis">Thomas Modeneis</a>
-    </h5>
-  </body>
+<head>
+
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-resource/angular-resource.min.js">
+</script>
+<script src="js/firebase.js"></script>
+<script src="bower_components/angularfire/angularFire.js"></script>
+<script src="js/bench/project.js"></script>
+
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+  <h2>
+    <img height="200" src="img/vegeta.jpeg">
+    Load Test your Projects Using Golang<br>
+  </h2>
+  <div ng-view></div>
+  <h5>
+    <a target="_BLANK" href="https://github.com/gibraltargolang/loadtestwebapp">Source</a>
+    | by <a target="_BLANK" href="http://www.meetup.com/Gibraltar-Golang-Community/">Gibraltar Golang Community</a>
+    | <a target="_BLANK" href="https://careers.stackoverflow.com/thomasmodeneis">Thomas Modeneis</a>
+  </h5>
+</body>
 </html>
